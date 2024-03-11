@@ -9,7 +9,7 @@ public class Main {
 		StringBuilder sb = new StringBuilder("long ");
 		
 		int intPutValue = 0;
-	    int value = 0;
+	        int value = 0;
 	    
 		String[] s = br.readLine().split(" ");
 		intPutValue = Integer.parseInt(s[0]);
