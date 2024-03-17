@@ -41,5 +41,23 @@
 </tr>
 </tbody>
       </table>
+      
+1. 입력받은 숫자를 문자열로 변환하기 
+> 입력받은 정수 long형의 static 메서드 toString()을 사용하여 변환
 
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+``` String str = Long.toString(n); ```
+
+2. 문자열을 뒤집기 
+> StringBuilder 클래스의  reverse() 메서드를 통해서 뒤집기 
+3. 뒤집힌 문자열을 문자의 배열로 변환 
+> String 클래스의 toCharArray() 메서드를 사용하여 문자 배열로 변환 
+4. 배열의 각 문자를 정수로 변환 
+> 문자를 아스키 코드를 활용하여 정수로 변환하는 작업을 통해서 int 배열에 할당 
+```
+int[] result = new int[arr.length];
+for(int i = 0;i < result.length; i++) {
+     result[i] = arr[i] - '0';
+}
+return result; 
+```
+출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
