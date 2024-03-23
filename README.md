@@ -19,7 +19,7 @@ Repository는 <a href="https://chromewebstore.google.com/detail/%EB%B0%B1%EC%A4%
 > 시간 복잡도의 유형 
 - 빅-오메가(Ω(n)): 최선일 때(best case)의 연산 횟수를 나타낸 표기법
 - 빅-세타(Θ(n)): 보통일 때(average case)의 연산 횟수를 나타낸 표기법
-- ***빅-오(O(n)): 최악일 때(worst case)의 연산 횟수를 나타낸 표기법***  
+- <Strong>빅-오(O(n)): 최악일 때(worst case)의 연산 횟수를 나타낸 표기법</Strong>  
 
 코딩 테스트에서는 <Strong>빅-오표기법(O(n))</Strong> 을 기준으로 수행 시간을 계산합니다 <br> 
 모든 테스트 케이스에 통과하는 적합한 알고리즘을 합격으로 판단하기 때문에 최악의 경우를 엄두합니다 
