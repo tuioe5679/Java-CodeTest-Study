@@ -24,4 +24,4 @@ Repository는 <a href="https://chromewebstore.google.com/detail/%EB%B0%B1%EC%A4%
 코딩 테스트에서는 <Strong>빅-오표기법(O(n))</Strong> 을 기준으로 수행 시간을 계산합니다 <br> 
 모든 테스트 케이스에 통과하는 적합한 알고리즘을 합격으로 판단하기 때문에 최악의 경우를 엄두합니다 
 
-<image src="Big-O.png" alt="My Image" width="1000"></image>
+<image src="Big-O.png" alt="My Image" width="700"></image>
