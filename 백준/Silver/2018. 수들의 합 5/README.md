@@ -63,14 +63,14 @@ e가 오른쪽으로 한 칸 이동하는 것은 연석된 자연수의 범위�
 
 - 해당 방법을 end_index가 N이 될 때까지 반복
 
-``` 
+``` java
 while(end_index != N){}
 
 N = 5;
 start_index,end_index,sum,count = 1;
 ``` 
 1. sum 값이 N의 값보다 작으니 end_index 1 증가 시키고 sum 값에 end_index 값을 더함 (sum 값이 N값 보다 크거나 같을때까지 반복)
-```
+``` java
 else {
     end_index++;
     sum += end_index;
@@ -85,7 +85,7 @@ sum += end_index;
 1 + 2 + 3 = 6
 
 2. 1 + 2 + 3 = (sum) 6 sum이 N 보다 크니 start_index 값을 감소  
-``` 
+``` java
 else if(sum>N){
     sum-=start_index;
     start_index++;
@@ -99,7 +99,7 @@ start_index++;      // 왼쪽값 삭제
 2 + 3 = 5
 
 3. 2 + 3 = (sum) 5 sum이 N과 같으니 count,end_index를 1증가 sum값에 end_index를 더하기 
-```
+``` java
 if(sum==N){
     count++;
     end_index++;
