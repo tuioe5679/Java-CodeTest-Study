@@ -61,13 +61,13 @@
 ### 2. 풀어 보기
 
 1. N개의 수을 입력 받아 합 배열을 생성합니다 
-```
+``` java
 for(int i=1;i<=suNo;i++){
     S[i] = S[i-1] + Integer.parseInt(st.nextToken());
 }
-```
+``` 
 2. 구간 i ~ j 값을 입력 받으면 공식을 통해서 값을 구하여 출력 
-```
+``` java
 int quizNo = Integer.parseInt(st.nextToken()); // 합을 구할 횟수 
 
 for(int i=0;i<quizNo;i++){
