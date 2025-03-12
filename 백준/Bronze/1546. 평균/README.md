@@ -29,4 +29,49 @@
 ### 출력 
 
  <p>첫째 줄에 새로운 평균을 출력한다. 실제 정답과 출력값의 절대오차 또는 상대오차가 10<sup>-2</sup> 이하이면 정답이다.</p>
+## 문제 풀이
 
+### 1. 문제 분석 단계
+입력 받은 값에서 최고 점수를 기준으로 계산하여 평균을 내야하기 때문에   
+입력 받은 값중에 최고 점수를 찾아 따로 저장해 사용해야 합니다
+
+한 과목의 점수를 계산하는 식은 간단하게 만들수 있습니다
+> (A / M * 100 + B / M * 100 * C / M * 100) / 3   
+> = (A + B + C) * 100 / M / 3
+
+1. 입력 받은 값(점수)를 1차원 배열에 저장
+2. 배열을 순회하여 최고 점수와 점수의 총합을 구함
+3. '총합  * 100 / 최고 점수 / 과목 수' (30 * 100 / 10 / 5 = 60)
+
+### 2. 풀어 보기
+``` java
+public static void main(String[] args) throws Exception {
+        Scanner stdin = new Scanner(System.in);
+        int count = stdin.nextInt();
+        int[] subject = new int[count];
+
+        for(int i=0;i<count;i++){
+            subject[i] = stdin.nextInt();
+        }
+        
+        long max = 0;
+        long sum = 0;
+
+        for(int i=0;i<count;i++){
+            if(max<subject[i]){
+                max = subject[i];
+            }
+            sum += subject[i];
+        }
+        System.out.println(sum*100.0/max/count);
+    }
+```
+시험 본 과목 개수 N을 입력받아 입력받은 점수를 담을 ```subject``` 배열의 크기를 지정합니다  
+과목 개수 만큼 점수를 입력하고 1차원 배열에 순차적으로 저장합니다
+
+최고 점수를 저장할 ```max``` 점수의 총합를 저장할 ```sum``` 변수 선언
+
+입력받은 점수를 순회하여 최고 점수를 찾아내 ```max``` 변수에 저장  
+그외는 ```sum``` 변수에 누적하여 점수를 더함
+
+```'총합  * 100 / 최고 점수 / 과목 수'``` 식을 적용하여 출력
