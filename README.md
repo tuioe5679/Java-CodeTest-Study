@@ -1,4 +1,4 @@
-# Java-CodeTest-Study  <img src="https://img.shields.io/badge/Java-2F7293?style=flat-square&logo=OpenJDK&logoColor=white"/> <img src="https://img.shields.io/badge/VS Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/> 
+# Java-CodeTest-Study  <img src="https://img.shields.io/badge/Java-2F7293?style=flat-square&logo=OpenJDK&logoColor=white"/>
 
 코딩 테스트 준비 & 알고리즘 공부 내용을 정리하는 Repository 입니다 <br>
 Repository는 <a href="https://chromewebstore.google.com/detail/%EB%B0%B1%EC%A4%80%ED%97%88%EB%B8%8Cbaekjoonhub/ccammcjdkpgjmcpijpahlehmapgmphmk?hl=ko">백준 허브</a> 플러그인으로 관리 하고 있습니다
